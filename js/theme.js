@@ -9,6 +9,8 @@ const enableDark = () => {
     feather.replace();
 };
 
+enableDark();
+
 const disableDark = () => {
     document.body.classList.remove('darktheme');
     localStorage.setItem('darkTheme', null);
