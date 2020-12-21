@@ -1,3 +1,12 @@
+//force dark mode
+
+document.body.classList.add('darktheme');
+localStorage.setItem('darkTheme', 'enabled');
+themeToggle.innerHTML = `<i id="bicon" data-feather="moon"></i>`;
+feather.replace();
+
+
+
 // Store the theme
 let darkTheme = localStorage.getItem('darkTheme');
 const themeToggle = document.querySelector('#themeButton');
@@ -8,8 +17,6 @@ const enableDark = () => {
     themeToggle.innerHTML = `<i id="bicon" data-feather="moon"></i>`;
     feather.replace();
 };
-
-enableDark();
 
 const disableDark = () => {
     document.body.classList.remove('darktheme');
